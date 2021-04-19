@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,23 +11,20 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="b-cont">
+    <header>
         <div class="top-menu">
-            <div class="toggle-button button-open">
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-            </div>
             <div class="logo">
                 <img src="./src/images/13.png" alt="Логотип">
-            </div>
-            <div class="name">
-<!--                <a href="#">gray<br>square</a>-->
             </div>
         </div>
     </header>
     <main class="b-cont">
-        <div class="menu-wrap menu-show">
+        <div class="toggle-button">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <div class="menu-wrap">
             <div class="menu-sidebar">
                 <ul class="menu">
                     <li><a href="#">Главная</a></li>
@@ -45,10 +42,19 @@
             <div class="contain-items"></div>
             <div class="contain-items"></div>
             <div class="contain-items"></div>
-            <div class="contain-items"></div>
-            <div class="contain-items"></div>
-            <div class="contain-items"></div>
+            <div class="contain-task">
+                <p>У нас есть массив:</p>
+                <p class="numberArray">[1,2,3,4,5]</p>
+                <p>Вы можете сместить его на n шагов вправо, для этого введите n:</p>
+                <div class="form__out_arr">
+                    <form class="out_arr" id="out_arr">
+                        <input type="text" class="input_N" placeholder="введите n" form="out_arr">
+                        <button type="submit" class="btn1">Результат</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
+<script src="./src/js/custom.js"></script>
 </body>
 </html>
